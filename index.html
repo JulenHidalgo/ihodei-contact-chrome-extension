@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Subir Archivos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="boton-ayuda" title="Ver manual de uso">?</button>
+
+  <form id="formulario-envio">
+    <h2>Subir archivos para una publicación</h2>
+
+    <!-- 📝 Campo título -->
+    <input type="text" maxlength="100" id="titulo" placeholder="Título de la publicación (máximo 100 caracteres)"
+      required />
+
+    <!-- 🧾 Campo texto -->
+    <textarea id="texto" placeholder="Escribe el texto de la publicación..." rows="5" required></textarea>
+
+    <!-- 📷 Imágenes -->
+    <div class="bloque-subida">
+      <h3>📷 Imágenes</h3>
+      <input type="file" id="imagenes" multiple accept="image/*" />
+      <div id="preview-imagenes" class="preview-grid"></div>
+    </div>
+
+    <!-- 🎥 Vídeos -->
+    <div class="bloque-subida">
+      <h3>🎥 Vídeos</h3>
+      <input type="file" id="videos" multiple accept="video/*" />
+      <div id="preview-videos" class="preview-grid"></div>
+    </div>
+
+    <!-- 📄 PDFs -->
+    <div class="bloque-subida">
+      <h3>📄 PDF</h3>
+      <input type="file" id="pdfs" multiple accept="application/pdf" />
+      <div id="preview-pdfs" class="preview-grid"></div>
+    </div>
+
+    <button type="button" id="enviar">Enviar archivos</button>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

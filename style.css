@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@400&display=swap");
+
+html,
+body {
+  height: fit-content;
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to bottom right, #6ba6da, #d7e7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  color: white;
+  text-align: center;
+}
+
+#boton-ayuda {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  width: 70%;
+}
+
+/* Estilo del título */
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #044f8b;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #044f8b;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.03);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  padding: 6px;
+  background: white;
+  color: #043f6c;
+  cursor: pointer;
+}
+
+textarea:focus {
+  outline: none;
+  transform: scale(1.03);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f39c12;
+  opacity: 0.8;
+  color: #00274d;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 183, 3, 0.4);
+  transition: all 0.2s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(255, 183, 3, 0.6);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.bloque-subida {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.preview-item {
+  width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  position: relative;
+}
+
+.preview-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.preview-pdf {
+  background: rgba(255, 255, 255, 0.9);
+  color: #00274d;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: fit-content;
+}
+
+.pdf-nombre {
+  white-space: nowrap;
+}
+
+.boton-x {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: transparent;
+  color: red;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  width: fit-content;
+  box-shadow: none;
+}
+
+.boton-x:hover {
+  color: darkred;
+  box-shadow: none;
+}
