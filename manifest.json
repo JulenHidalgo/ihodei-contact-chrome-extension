@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Guardado de videos para la app de iHodeiContact",
+  "version": "1.0",
+  "description": "Extensión para automatizar el registro de clientes en la app de blogs mediante Make. Ingresa los datos del cliente y su logo, y la automatización se encarga del resto.",
+  "icons": {
+    "16": "icono_positivoRGB.png",
+    "32": "icono_positivoRGB.png",
+    "48": "icono_positivoRGB.png",
+    "128": "icono_positivoRGB.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icono_positivoRGB.png",
+      "32": "icono_positivoRGB.png",
+      "48": "icono_positivoRGB.png",
+      "128": "icono_positivoRGB.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+  "https://ihodeicontact.up.railway.app/*"
+  ]
+
+
+}
