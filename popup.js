@@ -11,10 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarConfiguracion();
   document.getElementById("enviar").addEventListener("click", enviarArchivos);
   document.getElementById("boton-ayuda").addEventListener("click", () => {
-    window.open(
-      "manual_de_uso_creación_de_usuarios_iHodei_Blogs.pdf",
-      "_blank"
-    );
+    window.open("manual_uso_chrome_extension_ihodei_contact.pdf", "_blank");
   });
 
   document.getElementById("imagenes").addEventListener("change", (e) => {
